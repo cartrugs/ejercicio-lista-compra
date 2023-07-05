@@ -40,7 +40,6 @@ const subirArrayLocal = () => {
 const llenarVacia = () => {
     const otroArray = subirArrayLocal()
     console.log(otroArray);
-    console.log(otroArray);
     otroArray.forEach((item) => {
     const nuevoArticulo = document.createElement("P");
     nuevoArticulo.textContent = item;
