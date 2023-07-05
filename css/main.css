@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+button {
+    width: 40%;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+label, button {
+    width: 100%;
+}
+
+section {
+    flex: 1;
+    margin: 10px; 
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row; /* Cambia la dirección a horizontal */
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.btn {
+    background-color: rgb(143, 163, 159);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+section#productos {
+    background-color: rgb(216, 230, 227);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+section#listaVacia {
+    background-color: rgb(211, 211, 211);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.btn:hover {
+    background-color: rgb(120, 142, 137);
+}
