@@ -19,8 +19,10 @@ document.addEventListener("click", (ev) => {
   if (ev.target.classList.contains("btn")) {
     arrayAnyadidos.push(ev.target.id);
   }
-  llenarVacia();
   subirArrayLocal()
+ 
+  llenarVacia();
+  
   
 });
 console.log(arrayAnyadidos);
@@ -30,15 +32,18 @@ console.log(arrayAnyadidos);
 const subirArrayLocal = () => {
     let comprados = arrayAnyadidos;
     console.log(comprados)
-    let local1 = localStorage.setItem('compradosArray', JSON.stringify(comprados));
-    return local1
+    localStorage.setItem('compradosArray', JSON.stringify(comprados));
+    console.log(comprados);
+    return comprados
 }
 
-
 const llenarVacia = () => {
-  arrayAnyadidos.forEach((item) => {
+    const otroArray = subirArrayLocal()
+    console.log(otroArray);
+    console.log(otroArray);
+    otroArray.forEach((item) => {
     const nuevoArticulo = document.createElement("P");
-    nuevoArticulo.textContent = arrayAnyadidos[arrayAnyadidos.length];
+    nuevoArticulo.textContent = item;
     console.log(nuevoArticulo);
     fragmento.append(nuevoArticulo);
   });
