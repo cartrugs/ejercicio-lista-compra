@@ -68,3 +68,37 @@ section#listaVacia {
 .btn:hover {
     background-color: rgb(120, 142, 137);
 }
+
+.btnQuitar {
+    background-color: rgb(130, 164, 99);
+    color: rgb(82, 94, 106);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.btnQuitar:hover {
+    background-color: rgb(173, 222, 127);
+}
+
+.btnQT {
+    background-color: rgb(236, 192, 109);
+    color: rgb(144, 69, 16);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.btnQT:hover {
+    background-color: rgb(232, 179, 82);
+}
+
+section#listaVacia {
+    background-color: rgb(74, 76, 72);
+    color: rgb(199, 223, 176);
+    font-weight: bold;
+}
